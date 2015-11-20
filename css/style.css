@@ -1,0 +1,50 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+	font-size: 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1{
+	text-align: center;
+}
+
+svg *{
+  fill: none;
+  stroke: #000;
+}
+
+#game{
+	margin: 0 auto;
+	width: 200px;
+  padding: 10px;
+  background: #497285;
+  text-align: center;
+}
+.field{
+  padding: 0;
+  margin: 0 0 0 -5px;
+  list-style: none;
+  text-align: center;
+  font-size: 0;
+}
+.field li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 5px 5px;
+  width: 50px;
+  height: 50px;
+  background: #DFEBED;
+  font-size: 0;
+  cursor: pointer;
+}
