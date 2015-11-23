@@ -27,11 +27,12 @@ svg *{
 #game{
 	margin: 0 auto;
 	width: 200px;
-  padding: 10px;
+  padding: 20px 10px 5px 10px;
   background: #497285;
   text-align: center;
 }
 .field{
+  position: relative;
   padding: 0;
   margin: 0 0 0 -5px;
   list-style: none;
@@ -39,6 +40,8 @@ svg *{
   font-size: 0;
 }
 .field li {
+  position: relative;
+  z-index: 10;
   display: inline-block;
   vertical-align: top;
   margin: 0 0 5px 5px;
@@ -47,4 +50,16 @@ svg *{
   background: #DFEBED;
   font-size: 0;
   cursor: pointer;
+}
+
+.field.active:before{
+  content: "";
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 15px;
+  bottom: 5px;
+  right: 10px;
+  background: rgba(255,255,255,.5);
+
 }
